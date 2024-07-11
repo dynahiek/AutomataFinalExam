@@ -41,7 +41,6 @@ $('#test').onclick = function () {
             if (!transitions.hasOwnProperty(symbol)) continue;
             if (transitions[symbol].length) break;
         }
-
         const machineReadableRegexConverter = new MachineReadableRegexConverter();
         symbol = machineReadableRegexConverter.convert(symbol);
         const regex = new RegExp(`^${symbol}$`);

@@ -1,7 +1,6 @@
 /**
  * New DFA Minimizer
  */
-
 class Minimizer{
     constructor(originFa){
         this.fa = new FiniteAutomata().import(originFa.export());
